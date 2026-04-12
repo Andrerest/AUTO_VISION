@@ -1,0 +1,54 @@
+{
+  "name": "Modification",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Modification name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Aero",
+        "Stance",
+        "Power",
+        "Interior",
+        "Exhaust",
+        "Brakes",
+        "Electronics"
+      ],
+      "description": "Modification category"
+    },
+    "car_id": {
+      "type": "string",
+      "description": "Reference to the car this modification applies to"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the modification"
+    },
+    "power_gain": {
+      "type": "string",
+      "description": "Estimated power gain"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Bolt-On",
+        "Moderate",
+        "Advanced",
+        "Expert"
+      ],
+      "description": "Installation difficulty level"
+    },
+    "price_range": {
+      "type": "string",
+      "description": "Estimated price range"
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "car_id"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Car",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Car model name"
+    },
+    "brand": {
+      "type": "string",
+      "enum": [
+        "Toyota",
+        "Honda",
+        "BMW",
+        "Ford",
+        "Volkswagen",
+        "Custom"
+      ],
+      "description": "Car manufacturer"
+    },
+    "origin": {
+      "type": "string",
+      "enum": [
+        "Japan",
+        "Germany",
+        "USA",
+        "Custom"
+      ],
+      "description": "Chassis origin country"
+    },
+    "year_range": {
+      "type": "string",
+      "description": "Production year range"
+    },
+    "engine": {
+      "type": "string",
+      "description": "Engine specification"
+    },
+    "horsepower": {
+      "type": "number",
+      "description": "Stock horsepower"
+    },
+    "torque": {
+      "type": "string",
+      "description": "Stock torque"
+    },
+    "drivetrain": {
+      "type": "string",
+      "enum": [
+        "FWD",
+        "RWD",
+        "AWD",
+        "4WD"
+      ],
+      "description": "Drivetrain type"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Car image URL"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the car"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "description": "Whether this car is featured/highlighted"
+    }
+  },
+  "required": [
+    "name",
+    "brand",
+    "origin"
+  ]
+}
